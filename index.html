@@ -17,45 +17,57 @@
 
 <body>
 
+
     <header>
 
-        <div class="logo">
-            <a href=""><svg width="60" height="60">
-                    <image
-                        href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a2e581d-98d2-40ea-a20e-410dab5e6c7e/dbca0nk-26b50f5b-bdbd-4463-a36a-87cf2810fa01.png/v1/fill/w_1024,h_797,strp/logo_lion_goat_tribal_by_richark130_dbca0nk-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Nzk3IiwicGF0aCI6IlwvZlwvMGEyZTU4MWQtOThkMi00MGVhLWEyMGUtNDEwZGFiNWU2YzdlXC9kYmNhMG5rLTI2YjUwZjViLWJkYmQtNDQ2My1hMzZhLTg3Y2YyODEwZmEwMS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.knhEUQsO01nL-SGVabiwJixVb90fR_V4cTW2LErSaTQ"
-                        height="60" width="60" />
-                </svg></a>
-            <h1>Lion<strong>Filmes</strong></h1>
-        </div>
+        <section class="logo-menu">
+            <div class="logo">
+                <a href=""><svg width="60" height="49">
+                        <image
+                            href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0a2e581d-98d2-40ea-a20e-410dab5e6c7e/dbca0nk-26b50f5b-bdbd-4463-a36a-87cf2810fa01.png/v1/fill/w_1024,h_797,strp/logo_lion_goat_tribal_by_richark130_dbca0nk-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Nzk3IiwicGF0aCI6IlwvZlwvMGEyZTU4MWQtOThkMi00MGVhLWEyMGUtNDEwZGFiNWU2YzdlXC9kYmNhMG5rLTI2YjUwZjViLWJkYmQtNDQ2My1hMzZhLTg3Y2YyODEwZmEwMS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.knhEUQsO01nL-SGVabiwJixVb90fR_V4cTW2LErSaTQ"
+                            height="55" width="55" />
+                    </svg></a>
+                <h1>Lion<strong>Filmes</strong></h1>
+            </div>
 
-        <div class="menu">
-            <nav>
+            <div class="menu-desktop">
                 <span>LANÇAMENTOS</span>
                 <span>FRANQUIAS</span>
                 <span>GÊNEROS</span>
-            </nav>
+            </div>
+        </section>
+
+        <div id="menu-bar" class="menu-mobile">
+
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+
+            <ul class="nav" id="nav">
+                <li>Lançamentos</li>
+                <li>Franquias</li>
+                <li>Gêneros</li>
+            </ul>
+
         </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
         <section>
-            <div class="search">
-                <input type="text" placeholder="Buscar por filmes e atores">
-            </div>
-
-            <div class="signup">
-                <span>Entrar</span>
-            </div>
-
-            <div class="free">
-                <button onclick="">Experimente Grátis</button>
-            </div>
+            <input type="text" placeholder="Buscar por filmes ou atores">
+            <button class="signup">Entrar</button>
+            <button class="free">Experimente Grátis</button>
         </section>
 
     </header>
 
     <main>
 
-        <section id="imagem">
-            <button onclick="">Experimente Grátis</button>
-        </section>
+        <div id="imagem">
+            <img src="https://static.alphacoders.com/thumbs_categories/20.jpg" alt="">
+        </div>
 
         <h2>Escolha o seu plano e aproveite!</h2>
 
@@ -70,7 +82,7 @@
                 <p>3 perfis por conta</p>
                 <p>Lançamentos dos grandes<br>estúdios do cinema</p>
                 <p>As melhores cinelistas com<br>curadoria exclusiva</p>
-                <button onclick="" class="1">Assine Já</button>
+                <button class="assinar">Assine Já</button>
             </div>
 
             <div class="card">
@@ -83,7 +95,7 @@
                 <p>3 dispositivos cadastrados</p>
                 <p>3 perfis por conta</p>
                 <p>3 familiares da mesma casa<br>no Lionplay</p>
-                <button onclick="">Assine Já</button>
+                <button class="assinar">Assine Já</button>
             </div>
 
             <div class="card">
@@ -95,20 +107,21 @@
                 <p>3 dispositivos cadastrados</p>
                 <p>20 canais ao vivo</p>
                 <p>5 familiares da mesma casa<br>no Lionplay</p>
-                <button onclick="">Assine Já</button>
-
+                <button class="assinar">Assine Já</button>
 
             </div>
         </section>
 
         <section id="text">
-            <p>Os assinantes dos canais LionFilmes<br>além de filmes gratuitos tem os<br>melhores preços do mercado!</p>
-            <div class="signup2">
-                <span>Cadastre-se</span>
-            </div>
-            <div class="link">
+
+            <p>Os assinantes dos canais LionFilmes<br>além de filmes gratuitos tem os<br>melhores preços do mercado!
+            </p>
+
+            <div class="signup-link">
+                <button class="signup">Cadastre-se</button>
                 <a href="">Saiba como assinar</a>
             </div>
+
         </section>
 
     </main>
@@ -123,8 +136,10 @@
 
         <p>Copyright © 2020 LionFilmes All Rights Reserved</p>
 
-        <p>AS projetos</p>
     </footer>
+
+    <script src="script.js"></script>
+
 
 </body>
 
